@@ -1,0 +1,21 @@
+{
+    "logger": {
+        "colorize": true,
+        "morganFormat": "dev",
+        "json": false,
+        "level": "info",
+        "timestamp": true,
+        "label": "winston"
+    },
+    "gateway": {
+        "maxMessageSize": "16KB",
+        "restJsonSize": "1mb",
+        "key": "replace-me-in-production",
+        "url": "http://localhost:3000"
+    },
+    "tinylicious": "http://localhost:3001",
+    "npm": "https://unpkg.com/",
+    "error": {
+        "track": false
+    }
+}

@@ -1,0 +1,30 @@
+{{<layout}}
+
+{{$content}}
+    <div id="content" style="flex: 1 1 auto; position: relative"></div>
+{{/content}}
+
+{{$scripts}}
+    {{#scripts}}
+        {{#scripts}}
+        <script id="{{id}}" src="{{url}}" async></script>
+        {{/scripts}}
+    {{/scripts}}
+
+    <script>
+        {{#chaincode}}
+        var chaincode = {{{ chaincode }}};
+        {{/chaincode}}
+        {{^chaincode}}
+        var chaincode;
+        {{/chaincode}}
+        var jwt = "{{ jwt }}";
+  
+        containerP = controllers.loader.initialize(
+            window.location.href,
+            chaincode,
+            jwt);
+    </script>
+{{/scripts}}
+
+{{/layout}}

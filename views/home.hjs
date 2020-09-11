@@ -1,0 +1,10 @@
+{{<layout}}
+{{$content}}
+<div class="container">
+    <h1>Tinylicious Gateway</h1>
+    <p>
+        Minimal host service that's able to connect to a Tinylicious service
+    </p>
+</div>
+{{/content}}
+{{/layout}}
