@@ -49,14 +49,12 @@ export function create(
                 };
             } else {
                 const details = extractPackageIdentifierDetails(chaincode);
-                console.log(details);
                 codeDetails = {
                     config: {
                         [`@${details.scope}:cdn`]: cdn,
                     },
                     package: chaincode,
                 };
-                console.log(codeDetails);
             }
         }
 
